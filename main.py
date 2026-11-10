@@ -1,4 +1,4 @@
-from src.tools.tools import web_search,scrape_url
+from src.pipelines.pipeline import run_research_pipeline
 
-r=web_search.invoke("what is the ai news")
-print(r)
+topic="the impact of ai "
+run_research_pipeline(topic)
